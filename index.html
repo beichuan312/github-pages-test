@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Pages 测试页面</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+      color: #172033;
+      background: #f3f6fb;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+    }
+
+    main {
+      width: min(90%, 520px);
+      padding: 36px;
+      border: 1px solid #e1e7f0;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 12px 32px rgb(23 32 51 / 8%);
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #1769aa;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: 0;
+      border-radius: 8px;
+      background: #1769aa;
+      color: #fff;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #125487;
+    }
+
+    #result {
+      min-height: 1.5em;
+      color: #26734d;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>GitHub Pages 测试页面</h1>
+    <p>这是一个独立的静态网页，可用于测试网页发布和访问。</p>
+    <button id="test-button" type="button">测试页面交互</button>
+    <p id="result" aria-live="polite"></p>
+  </main>
+  <script>
+    document.getElementById("test-button").addEventListener("click", function () {
+      document.getElementById("result").textContent = "页面交互正常！";
+    });
+  </script>
+</body>
+</html>
